@@ -1,0 +1,14 @@
+.circle {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to right,red,blue);
+    clip-path: circle(6rem);
+}
+
+.circle:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+
