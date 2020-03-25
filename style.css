@@ -3,12 +3,10 @@
     height: 400px;
     background: linear-gradient(to right,red,blue);
     clip-path: circle(6rem);
+    transition: all .2s ease-in-out
 }
 
 .circle:hover {
     transform: scale(1.5);
     cursor: pointer;
 }
-
-
-
