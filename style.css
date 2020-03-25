@@ -1,12 +1,55 @@
-.circle {
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* circle 1 */
+.circle1 {
     width: 400px;
     height: 400px;
-    background: linear-gradient(to right,red,blue);
+    background: linear-gradient(to right, red, blue);
     clip-path: circle(6rem);
     transition: all .2s ease-in-out
 }
 
-.circle:hover {
+.circle1:hover {
     transform: scale(1.5);
     cursor: pointer;
+}
+
+/* ciricle 2 */
+
+.circle2 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to right, red, blue);
+    clip-path: circle(6rem);
+
+}
+
+.circle2:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    animation: heartbeat 1s infinite
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5)
+    }
+}
+
+/* ciricle 3 */
+
+.circle3 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to right, red, blue);
+    clip-path: circle(6rem);
+    cursor: pointer;
+    animation: heartbeat 1s infinite
 }
