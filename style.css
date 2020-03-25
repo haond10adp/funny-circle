@@ -1,14 +1,18 @@
 .wrapper {
+    max-width: 980px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* circle 1 */
-.circle1 {
-    width: 400px;
+.circle {
     height: 400px;
     background: linear-gradient(to right, red, blue);
     clip-path: circle(6rem);
+}
+
+/* circle 1 */
+.circle1 {
     transition: all .2s ease-in-out
 }
 
@@ -19,17 +23,9 @@
 
 /* ciricle 2 */
 
-.circle2 {
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(to right, red, blue);
-    clip-path: circle(6rem);
-
-}
-
 .circle2:hover {
     cursor: pointer;
-    animation: heartbeat 1s infinite
+    animation: heartbeat 1s infinite;
 }
 
 @keyframes heartbeat {
@@ -45,10 +41,6 @@
 /* ciricle 3 */
 
 .circle3 {
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(to right, red, blue);
-    clip-path: circle(6rem);
     cursor: pointer;
     animation: heartbeat 1s infinite
 }
