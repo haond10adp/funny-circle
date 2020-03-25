@@ -28,7 +28,6 @@
 }
 
 .circle2:hover {
-    transform: scale(1.5);
     cursor: pointer;
     animation: heartbeat 1s infinite
 }
